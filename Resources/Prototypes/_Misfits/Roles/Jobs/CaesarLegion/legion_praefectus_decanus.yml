@@ -16,7 +16,11 @@
     - !type:CharacterSpeciesRequirement
       species:
       - Human
-  startingGear: CaesarLegionVeteranDecanusGear
+    - !type:CharacterSexRequirement
+      sex: Male
+    - !type:CharacterGenderRequirement
+      gender: Male
+  startingGear: CaesarLegionPraefectusDecanusGear
   alwaysUseSpawner: true
   icon: "JobIconlegionerDean"
   supervisors: job-name-caesar-legion-supervisors

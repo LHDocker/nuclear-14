@@ -11692,3 +11692,17 @@ Entries:
   id: 6445
   time: '2026-09-16T12:49:42.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1929
+- author: Tytos
+  changes:
+    - type: Fix
+      message: Fixed spa not spawning on praefectus
+  id: 6446
+  time: '2026-09-16T20:17:38.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1933
+- author: Vixting
+  changes:
+    - type: Fix
+      message: 'fix some bounty requests not getting recognized '
+  id: 6447
+  time: '2026-09-16T20:17:52.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1931
