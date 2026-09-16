@@ -363,11 +363,11 @@
   availableFaction:
   - BrotherhoodOfSteel
   materials:
-    Steel: 75000
+    Steel: 7000
 
     Glass: 900
 
-    Circuitry: 700
+    Circuitry: 500
 
     ScrapElectronic: 450
 

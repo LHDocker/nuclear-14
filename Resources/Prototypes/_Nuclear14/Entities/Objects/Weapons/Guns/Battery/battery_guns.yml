@@ -1015,7 +1015,7 @@
     hitscanProtoOverride: N14MFLaserYellow
     bonusDamage:
       types:
-        Shock: 20
+        Shock: 15
     fireCostMultiplier: 2.0
 
 - type: entity
