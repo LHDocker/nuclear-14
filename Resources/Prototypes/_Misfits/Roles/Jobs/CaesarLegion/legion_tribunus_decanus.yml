@@ -14,10 +14,6 @@
     - !type:CharacterSpeciesRequirement
       species:
       - Human
-    - !type:CharacterSexRequirement
-      sex: Male
-    - !type:CharacterGenderRequirement
-      gender: Male
   startingGear: CaesarLegionTribunusDecanusGear
   alwaysUseSpawner: true
   icon: "JobIconlegionerDean"
