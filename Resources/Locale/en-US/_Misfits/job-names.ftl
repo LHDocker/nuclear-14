@@ -9,6 +9,9 @@ job-description-ncr-commander = You command the NCR detachment. Set operational 
 job-name-ncr-executive-officer = NCR Executive Officer
 job-description-ncr-executive-officer = You are the Commander's second, managing the detachment's day-to-day operations and keeping the NCOs in line. Lead by example and bridge command and the ranks below.
 
+job-name-lieutenant-colonel = NCR Lieutenant Colonel
+job-description-ltcol = You command the NCR detachment at the highest field level, coordinating officers, squads, and strategy while answering only to senior command. Legends tell you jumped all the way from staff sergeant.
+
 job-name-ncr-platoon-leader = NCR Platoon Leader
 job-description-ncr-platoon-leader = You lead a platoon in the field, directing NCOs and executing the Commander's orders. Your commision begins at 2LT — earn your 1LT through service.
 
@@ -132,6 +135,8 @@ job-name-follower-guard = Followers Guard
 job-description-follower-guard = You protect the Followers' clinic, escort doctors into dangerous ground, and keep desperate people from turning the humanitarian mission into another battlefield.
 job-name-follower-volunteer = Followers Volunteer
 job-description-follower-volunteer = You are new to the Followers. You believe knowledge and compassion can outlast bullets and bombs. Prove it — learn from those above you and help anyone who needs it.
+job-name-follower-director = Followers Director
+job-description-follower-director = You head the follower's training program, teaching new volunteers the ways of the Followers and how to survive in the wastes.
 
 # #Misfits Add - Supermutant Follower Doctor job locale.
 job-name-supermutant-follower-doctor = Supermutant Follower Doctor
@@ -197,7 +202,9 @@ job-description-synthetic-protectron-tribal = An agricultural robot that has bee
 
 # Legion Acolyte of Mars
 job-name-caesar-legion-Acolyte-of-mars = Acolyte of Mars
-job-description-caesar-legion-Acolyte-of-mars = You are a devoted Acolyte of Mars, you answer to the Preacher directly.
+job-description-caesar-legion-Acolyte-of-mars = You are a devoted Acolyte of Mars, you answer to the Priestess directly.
+job-name-caesar-legion-temple-guard = Temple Guard
+job-description-caesar-legion-temple-guard = Protect and fight for the Priestess and her acolytes, defend the sacred Temples, and enforce the law of Mars.
 
 job-name-bos-off-duty = Off Duty BOS
 job-description-bos-off-duty = You are an off-duty member of the Brotherhood of Steel. You are not to participate in operations as this week you are not on duty. To do so is to violate the codex.
