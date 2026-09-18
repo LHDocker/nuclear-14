@@ -416,7 +416,7 @@
     # General supplies
     - id: N14BoxCardboardMREBoxCFilled
     - id: N14Flare
-  sound:
+    sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
