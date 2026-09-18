@@ -115,7 +115,7 @@
     possibleSets:
     - NCRA_DoctorSet
     - NCRA_ComMedSet
-    - NCR_MedSurgeon
+    - NCRA_SurgeonSet
 
 - type: entity
   id: NCRwsloadoutkits
