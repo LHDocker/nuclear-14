@@ -740,15 +740,15 @@
   availableFaction:
   - BrotherhoodOfSteel
   materials:
-    Steel: 12000
+    Steel: 20000
 
-    N14Iron: 37
+    N14Iron: 350
 
-    Circuitry: 35
+    Circuitry: 350
 
-    ScrapElectronic: 30
+    ScrapElectronic: 3000
 
-    N14Brass: 15
+    N14Brass: 150
 
 
 
