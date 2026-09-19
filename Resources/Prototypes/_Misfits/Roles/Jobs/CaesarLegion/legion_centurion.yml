@@ -52,8 +52,6 @@
         - CaesarLegionDean
         - CaesarLegionPrimeDecanus
         - CaesarLegionVeteranDecanus
-        - CaesarLegionPraefectusDecanus
-        - CaesarLegionTribunusDecanus
         - CaesarLegionCenturion
         - CaesarLegionLegate
         - CaesarLegionOptio
