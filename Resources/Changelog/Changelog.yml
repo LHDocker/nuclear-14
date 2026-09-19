@@ -11706,3 +11706,83 @@ Entries:
   id: 6447
   time: '2026-09-16T20:17:52.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1931
+- author: ToasterEnjoyer
+  changes:
+    - type: Add
+      message: 'Mutants get free clothes now '
+  id: 6448
+  time: '2026-09-18T21:04:07.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1919
+- author: Enkidienne
+  changes:
+    - type: Add
+      message: bibbles
+  id: 6449
+  time: '2026-09-18T21:05:04.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1928
+- author: RedBookcase
+  changes:
+    - type: Remove
+      message: Removed Tribunus and Praefectus roles
+    - type: Remove
+      message: Removed Legion HAR kit & ammo BP
+  id: 6450
+  time: '2026-09-18T21:06:54.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1935
+- author: qevie
+  changes:
+    - type: Tweak
+      message: >-
+        Spoon has gotten a spiffy new bandana! Credits to enchantedcrocolisk for
+        the sprite.
+  id: 6451
+  time: '2026-09-18T21:09:34.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1932
+- author: Enkidienne
+  changes:
+    - type: Tweak
+      message: C27 can be customized
+  id: 6452
+  time: '2026-09-18T21:14:33.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1939
+- author: aftemath434
+  changes:
+    - type: Add
+      message: medieval armor sets
+  id: 6453
+  time: '2026-09-18T21:29:24.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1938
+- author: cythisiax
+  changes:
+    - type: Fix
+      message: >-
+        Removed Prefectus, and Tribanueualslaalsus markers on mapfile, missed by
+        someone's PR.
+  id: 6454
+  time: '2026-09-19T00:28:06.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1949
+- author: qevie
+  changes:
+    - type: Tweak
+      message: >-
+        The Noxa Column's brightest houndmasters have opted to distribute hounds
+        more evenly amongst the legio. Legion hounds for all!
+  id: 6455
+  time: '2026-09-19T01:14:44.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1945
+- author: Vixting
+  changes:
+    - type: Add
+      message: Ported automation from goob / trauma station
+    - type: Add
+      message: Add vault recipe to craft automation stuff
+  id: 6456
+  time: '2026-09-19T01:17:26.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1940
+- author: cythisiax
+  changes:
+    - type: Tweak
+      message: Head Paladin gets their cool Bonneville/509th recolor back.
+  id: 6457
+  time: '2026-09-19T01:28:36.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1950
