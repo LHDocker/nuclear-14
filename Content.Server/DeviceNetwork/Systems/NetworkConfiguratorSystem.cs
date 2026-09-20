@@ -535,6 +535,7 @@ public sealed class NetworkConfiguratorSystem : SharedNetworkConfiguratorSystem
         }
         
         // Delay 1 tick before refreshing UI state to ensure contents load on first open.
+        // remove when actual underlying problem is found
         Timer.Spawn(TimeSpan.Zero, () =>
         {
             if (Deleted(configuratorUid))

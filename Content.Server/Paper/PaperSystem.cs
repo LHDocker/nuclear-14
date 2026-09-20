@@ -119,6 +119,7 @@ namespace Content.Server.Paper
                 UpdateUserInterface(uid, paperComp);
                 
                 // Delay 1 tick before refreshing UI state to ensure contents load on first open.
+                // remove when actual underlying problem is found
                 Timer.Spawn(TimeSpan.Zero, () =>
                 {
                     if (Deleted(uid))

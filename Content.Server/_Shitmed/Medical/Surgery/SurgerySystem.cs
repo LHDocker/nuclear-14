@@ -152,6 +152,7 @@ public sealed class SurgerySystem : SharedSurgerySystem
         RefreshUI(target);
         
         // Delay 1 tick before refreshing UI state to ensure contents load on first open.
+        // remove when actual underlying problem is found
         Timer.Spawn(TimeSpan.Zero, () =>
         {
             if (Deleted(target))
