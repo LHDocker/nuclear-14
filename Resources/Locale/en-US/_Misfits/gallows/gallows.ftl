@@ -17,3 +17,5 @@ gallows-struggle-choke = chokes and sputters
 gallows-struggle-claw = claws weakly at the rope
 gallows-struggle-convulse = convulses in the noose
 gallows-struggle-blood = coughs up a mouthful of blood
+
+gallows-too-heavy = {CAPITALIZE(THE($victim))} they're to fat for this rope

@@ -4,17 +4,23 @@ using Content.Shared.Buckle.Components;
 using Content.Shared.Damage;
 using Content.Shared.DoAfter;
 using Content.Shared.DragDrop;
+using Content.Shared.Humanoid;
 using Content.Shared.Interaction;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
+using Content.Shared.Popups;
 using Content.Shared.Verbs;
 
 namespace Content.Shared._Misfits.Gallows;
 
 public abstract partial class SharedGallowsSystem : EntitySystem
 {
+    // way to fat
+    private const string TooHeavySpecies = "SuperMutant";
+
     [Dependency] protected readonly SharedDoAfterSystem DoAfter = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private readonly SharedPopupSystem _popup = default!;
 
     public override void Initialize()
     {
@@ -41,9 +47,7 @@ public abstract partial class SharedGallowsSystem : EntitySystem
             return;
 
         args.Handled = true;
-
-        if (ent.Comp.AttachDoAfter == null)
-            AttemptAttach(ent, args.User, args.User);
+        TryBeginAttach(ent, args.User, args.User);
     }
 
     private void OnDragDropTarget(Entity<GallowsComponent> ent, ref DragDropTargetEvent args)
@@ -55,9 +59,7 @@ public abstract partial class SharedGallowsSystem : EntitySystem
             return;
 
         args.Handled = true;
-
-        if (ent.Comp.AttachDoAfter == null)
-            AttemptAttach(ent, args.User, args.Dragged);
+        TryBeginAttach(ent, args.User, args.Dragged);
     }
 
     private void OnStrapAttempt(Entity<GallowsComponent> ent, ref StrapAttemptEvent args)
@@ -70,11 +72,27 @@ public abstract partial class SharedGallowsSystem : EntitySystem
             return;
 
         args.Cancelled = true;
+        TryBeginAttach(ent, args.User ?? victim, victim);
+    }
 
+    private void TryBeginAttach(Entity<GallowsComponent> ent, EntityUid user, EntityUid victim)
+    {
         if (ent.Comp.AttachDoAfter != null)
             return;
 
-        AttemptAttach(ent, args.User ?? victim, victim);
+        if (IsTooHeavy(victim))
+        {
+            _popup.PopupClient(Loc.GetString("gallows-too-heavy", ("victim", victim)), ent, user);
+            return;
+        }
+
+        AttemptAttach(ent, user, victim);
+    }
+
+    private bool IsTooHeavy(EntityUid victim)
+    {
+        return TryComp<HumanoidAppearanceComponent>(victim, out var appearance)
+            && appearance.Species == TooHeavySpecies;
     }
 
     private void OnUnbuckled(Entity<GallowsComponent> ent, ref UnbuckledEvent args)
