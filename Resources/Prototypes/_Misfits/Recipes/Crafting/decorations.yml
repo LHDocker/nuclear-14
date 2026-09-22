@@ -63,13 +63,13 @@
   placementMode: SnapgridCenter
 
 - type: construction
-  name: Flag of the Enclave
+  name: Flag of the U.S. Army
   id: N14FlagWallEnclave
   graph: MisfitsFlagEN
   startNode: start
   targetNode: flagen
 # category: construction-category-decorations
-  description: The banner of the Enclave, the descendents of America's elite who claim to be the true inheritors of the United States federal government.
+  description: The banner of the U.S. Army, the descendents of America's elite who claim to be the true inheritors of the United States federal government.
   hide: false
   icon:
     sprite: _Nuclear14/Structures/Wallmounts/walldecor_flags.rsi
@@ -145,7 +145,7 @@
   startNode: start
   targetNode: flagbos509w
   # category: construction-category-decorations
-  description: The banner of the 509th Brotherhood of Steel, an offshoot of the Mojave Chapter that survived Operation Sunburst and spent a decade as ghosts of the salt flats. Now risen as an active vanguard, they secure the region's lost technology before the Enclave or the ignorant can seize it.
+  description: The banner of the 509th Brotherhood of Steel, an offshoot of the Mojave Chapter that survived Operation Sunburst and spent a decade as ghosts of the salt flats. Now risen as an active vanguard, they secure the region's lost technology before the U.S. Army or the ignorant can seize it.
   hide: false
   icon:
     sprite: _Misfits/Structures/Wallmounts/walldecor_bos509th.rsi
@@ -309,13 +309,13 @@
 #  placementMode: SnapgridCenter
 
 - type: construction
-  name: Flag of the Enclave
+  name: Flag of the U.S. Army
   id: N14DecorationFlagEnclave
   graph: DecorationFlagEnclave
   startNode: start
   targetNode: FlagEnclave
 # category: construction-category-decorations
-  description: The banner of the Enclave, the descendents of the business and government elite of the United States, who believe it is their manifest destiny to rebuild and rule the wasteland as their birthright.
+  description: The banner of the U.S. Army, the descendents of the business and government elite of the United States, who believe it is their manifest destiny to rebuild and rule the wasteland as their birthright.
   hide: false
   icon:
     sprite: _Nuclear14/Structures/Decoration/flags.rsi
@@ -406,7 +406,7 @@
   startNode: start
   targetNode: FlagBOS509
   # category: construction-category-decorations
-  description: The banner of the 509th Brotherhood of Steel, an offshoot of the Mojave Chapter that survived Operation Sunburst and spent a decade as ghosts of the salt flats. Now risen as an active vanguard, they secure the region's lost technology before the Enclave or the ignorant can seize it.
+  description: The banner of the 509th Brotherhood of Steel, an offshoot of the Mojave Chapter that survived Operation Sunburst and spent a decade as ghosts of the salt flats. Now risen as an active vanguard, they secure the region's lost technology before the U.S. Army or the ignorant can seize it.
   hide: false
   icon:
     sprite: _Misfits/Structures/Decoration/bos509thflag.rsi
@@ -515,7 +515,7 @@
     sprite: _Nuclear14/Structures/Decoration/world.rsi
     state: brickrubble
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 - type: construction
   name: pallet
@@ -529,7 +529,7 @@
     sprite: _Nuclear14/Structures/Decoration/world.rsi
     state: pallet
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 - type: construction
   name: pallet stack
@@ -543,7 +543,7 @@
     sprite: _Nuclear14/Structures/Decoration/world.rsi
     state: pallet_stack
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 # Floor boards (all variants)
 - type: construction
@@ -558,7 +558,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_drought_ns-1
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -572,7 +573,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_drought_ns-2
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -586,7 +588,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_drought_ns-3
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -600,7 +603,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_drought_ns-4
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -614,7 +618,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_drought_ns-5
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -628,7 +633,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_drought_ns-6
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -642,7 +648,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_drought_we-1
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -656,7 +663,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_drought_we-2
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -670,7 +678,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_drought_we-3
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -684,7 +693,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_drought_we-4
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -698,7 +708,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_drought_we-5
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -712,7 +723,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_drought_we-6
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -726,7 +738,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_mammoth_ns-1
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -740,7 +753,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_mammoth_ns-2
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -754,7 +768,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_mammoth_ns-3
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -768,7 +783,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_mammoth_ns-4
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -782,7 +798,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_mammoth_ns-5
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -796,7 +813,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_mammoth_ns-6
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -810,7 +828,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_mammoth_we-1
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -824,7 +843,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_mammoth_we-2
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -838,7 +858,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_mammoth_we-3
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -852,7 +873,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_mammoth_we-4
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -866,7 +888,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_mammoth_we-5
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 - type: construction
   name: floor board
@@ -880,7 +903,8 @@
     sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
     state: boards_mammoth_we-6
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
+  canRotate: true
 
 # #Cythisiax Added - Crafting menu expansion: rebar structure
 - type: construction
@@ -910,7 +934,7 @@
     sprite: Corvax/Structures/Decoration/torches.rsi
     state: torch_lit
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 # #Cythisiax Added - Crafting menu expansion: rugs and mats (all variants)
 - type: construction
@@ -1164,7 +1188,7 @@
     sprite: _Nuclear14/Structures/Storage/barrels.rsi
     state: black-closed
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 - type: construction
   name: blue barrel
@@ -1178,7 +1202,7 @@
     sprite: _Nuclear14/Structures/Storage/barrels.rsi
     state: blue-closed
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 - type: construction
   name: red barrel
@@ -1192,7 +1216,7 @@
     sprite: _Nuclear14/Structures/Storage/barrels.rsi
     state: red-closed
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 - type: construction
   name: yellow barrel
@@ -1206,7 +1230,7 @@
     sprite: _Nuclear14/Structures/Storage/barrels.rsi
     state: yellow-closed
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 - type: construction
   name: black barrel
@@ -1220,7 +1244,7 @@
     sprite: _Nuclear14/Structures/Storage/barrels.rsi
     state: black-open
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 - type: construction
   name: blue barrel
@@ -1234,7 +1258,7 @@
     sprite: _Nuclear14/Structures/Storage/barrels.rsi
     state: blue-open
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 - type: construction
   name: red barrel
@@ -1248,7 +1272,7 @@
     sprite: _Nuclear14/Structures/Storage/barrels.rsi
     state: red-open
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 - type: construction
   name: yellow barrel
@@ -1262,7 +1286,7 @@
     sprite: _Nuclear14/Structures/Storage/barrels.rsi
     state: yellow-open
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 - type: construction
   name: black barrel
@@ -1276,7 +1300,7 @@
     sprite: _Nuclear14/Structures/Storage/barrels.rsi
     state: black-full
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 - type: construction
   name: red barrel
@@ -1290,7 +1314,7 @@
     sprite: _Nuclear14/Structures/Storage/barrels.rsi
     state: red-full
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree
 
 - type: construction
   name: yellow barrel
@@ -1304,4 +1328,4 @@
     sprite: _Nuclear14/Structures/Storage/barrels.rsi
     state: yellow-full
   objectType: Structure
-  placementMode: SnapgridCenter
+  placementMode: PlaceFree

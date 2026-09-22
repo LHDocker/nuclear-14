@@ -21,8 +21,9 @@ public abstract partial class SharedGunSystem
     /// </summary>
     private void OnTakeAmmo(EntityUid uid, CartridgeAmmoComponent giverComp, TakeAmmoEvent args)
     {
+
         args.Ammo.Add((uid, EnsureShootable(uid)));
-        Dirty(uid, giverComp);
+        //Dirty(uid, giverComp);
     }
     /// <summary>
     /// clients running this should handle visual/send event to server
@@ -34,7 +35,7 @@ public abstract partial class SharedGunSystem
     /// <param name="sender">client the event originated from. Null if server.
     ///                      Important for filtering clients who sent the event
     ///                      so they dont get it twice</param>
-    public virtual void EjectSpentCart(MapCoordinates baseCoord, Angle baseAngle, string? cartProto, ICommonSession? sender) { }
+    public virtual void EjectSpentCart(SpentCartEvent ev) { }
 
     [Serializable, NetSerializable]
     public sealed class SpentCartEvent(MapCoordinates baseCoord, Angle baseAngle, string? cartProto, NetUserId? sender) : EntityEventArgs

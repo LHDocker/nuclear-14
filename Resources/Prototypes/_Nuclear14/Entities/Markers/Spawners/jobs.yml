@@ -13,6 +13,19 @@
       - state: green
       - state: wastelander
 
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointWasterTrader
+  name: wasteland Trader
+  components:
+  - type: SpawnPoint
+    job_id: WasterTrader
+  - type: Sprite
+    sprite: _Nuclear14/Markers/Jobs/wastelanders.rsi
+    layers:
+      - state: green
+      - state: wastelander
+
 # BOS Midwest
 - type: entity
   id: N14SpawnPointBoSMidPaladinCommander
@@ -461,14 +474,14 @@
       - state: green
       - state: healer
 
-# #Misfits Add - Yuma Elder spawn point, reuses the base tribal marker.
+# #Misfits Add - "Yuma" Elder spawn point, reuses the base tribal marker.
 - type: entity
-  id: N14SpawnPointYumaElder
+  id: N14SpawnPointSuperElder
   parent: N14SpawnPointTribal
-  name: yuma elder
+  name: Willowed Elder
   components:
   - type: SpawnPoint
-    job_id: YumaElder
+    job_id: SuperElder
   - type: Sprite
     layers:
       - state: green

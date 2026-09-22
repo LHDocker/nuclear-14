@@ -11,6 +11,10 @@
   name: id-card-access-level-legion-recruit
 
 - type: accessLevel
+  id: CaesarLegionTrader
+  name: id-card-access-level-legion-trader
+
+- type: accessLevel
   id: CaesarLegionHoundmaster
   name: id-card-access-level-legion-houndmaster
 
@@ -55,6 +59,10 @@
   name: id-card-access-level-legion-acolyte-of-mars
 
 - type: accessLevel
+  id: CaesarLegionTempleGuard
+  name: id-card-access-level-legion-temple-guard
+
+- type: accessLevel
   id: CaesarLegionOptio
   name: id-card-access-level-legion-optio
 
@@ -81,6 +89,11 @@
   tags:
   - CaesarLegion
   - CaesarLegionRecruit
+
+- type: accessGroup
+  id: CaesarLegionTrader
+  tags:
+  - CaesarLegionTrader
 
 - type: accessGroup
   id: CaesarLegionHoundmaster
@@ -168,6 +181,7 @@
   tags:
   - CaesarLegion
   - CaesarLegionRecruit
+  - CaesarLegionTempleGuard
   - CaesarLegionAcolyteOfMars
   - CaesarLegionPriestessOfMars
 
@@ -176,13 +190,22 @@
   tags:
   - CaesarLegion
   - CaesarLegionRecruit
+  - CaesarLegionTempleGuard
   - CaesarLegionAcolyteOfMars
+
+- type: accessGroup
+  id: CaesarLegionTempleGuard
+  tags:
+  - CaesarLegion
+  - CaesarLegionRecruit
+  - CaesarLegionTempleGuard
 
 - type: accessGroup
   id: CaesarLegionOptio
   tags:
   - CaesarLegion
   - CaesarLegionRecruit
+  - CaesarLegionTrader
   - CaesarLegionHoundmaster
   - CaesarLegionFrumentarii
   - CaesarLegionVexillarius
@@ -202,6 +225,7 @@
   tags:
   - CaesarLegion
   - CaesarLegionRecruit
+  - CaesarLegionTrader
   - CaesarLegionHoundmaster
   - CaesarLegionFrumentarii
   - CaesarLegionVexillarius
@@ -221,6 +245,7 @@
   tags:
   - CaesarLegion
   - CaesarLegionRecruit
+  - CaesarLegionTrader
   - CaesarLegionHoundmaster
   - CaesarLegionFrumentarii
   - CaesarLegionVexillarius

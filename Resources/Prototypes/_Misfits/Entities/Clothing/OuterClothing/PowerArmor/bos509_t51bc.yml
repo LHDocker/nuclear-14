@@ -28,3 +28,15 @@
     sprite: _Misfits/Clothing/OuterClothing/PowerArmor/bos509_headpaladin_t51bc.rsi
   - type: Clothing
     sprite: _Misfits/Clothing/OuterClothing/PowerArmor/bos509_headpaladin_t51bc.rsi
+
+# --- 509th BoS Honor Guard T-51bc ---
+- type: entity
+  parent: N14ClothingOuterPowerArmorT51BC
+  id: MisfitsClothingOuterPowerArmorBoS509HonorGuard
+  name: 509th BoS Honor Guard T-51bc Power Armor
+  description: The personal T-51bc of a 509th Brotherhood of Steel Honor Guard, sworn to stand between the chapter and its Elder. Painted in the chapter's Bonneville colors, it carries the scars of vanguard action on the salt flats.
+  components:
+  - type: Sprite
+    sprite: _Misfits/Clothing/OuterClothing/PowerArmor/bos509_headpaladin_t51bc.rsi
+  - type: Clothing
+    sprite: _Misfits/Clothing/OuterClothing/PowerArmor/bos509_headpaladin_t51bc.rsi

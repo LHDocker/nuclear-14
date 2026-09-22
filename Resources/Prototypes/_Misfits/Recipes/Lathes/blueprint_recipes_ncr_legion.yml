@@ -334,7 +334,7 @@
 
 - type: latheRecipe
   id: N14BPNCRWeaponRevolver44Magnun
-  result: N14WeaponRevolver44Magnun
+  result: N14WeaponRevolver44Magnum
   category: N14BlueprintNCRWeaponsT2
   completetime: 10
   requiresBlueprint: true
@@ -945,6 +945,21 @@
 
     Leather: 120
 
+# #Misfits Add - NCR medic combat armor blueprint
+- type: latheRecipe
+  id: MisfitsBPNCRArmorMedicCombatArmor
+  result: MisfitsClothingOuterNCRMedicCombatArmor
+  category: N14BlueprintNCRArmorT3
+  completetime: 15
+  requiresBlueprint: true
+  availableFaction:
+  - NCR
+  materials:
+    Steel: 6000
+    Cloth: 1000
+    Thread: 150
+    Leather: 120
+
 
 - type: latheRecipe
   id: N14BPNCRArmorRangerVest
@@ -1481,12 +1496,27 @@
   completetime: 8
   requiresBlueprint: true
   availableFaction:
-  - CaesarLegion
+  - NCR
   materials:
     Steel: 1000
 
     N14Gunpowder: 1200
 
+    N14Iron: 500
+
+# #Misfits Add - Issue #968 faction ordnance: NCR offensive fragmentation grenade.
+- type: latheRecipe
+  id: MisfitsBPNCRGrenadeShrapnel
+  result: GrenadeShrapnel
+  category: N14BlueprintNCRAmmoT3
+  completetime: 10
+  requiresBlueprint: true
+  applyMaterialDiscount: false
+  availableFaction:
+  - NCR
+  materials:
+    Steel: 1500
+    N14Gunpowder: 1200
     N14Iron: 500
 
 
@@ -1514,14 +1544,14 @@
   requiresBlueprint: true
   availableFaction:
   - NCR
-  materials:
-    Lead: 1000
+  materials: # #Burger - mat costs was absurdly high compared to non BP recipe (you could misclick it)
+    Lead: 75 # #Burger - (was 1000)
 
-    N14Brass: 300
+    N14Brass: 75 # #Burger - (was 300)
 
-    N14Gunpowder: 500
+    N14Gunpowder: 75 # #Burger - (was 500)
 
-    Steel: 1000
+    Steel: 100 # #Burger - (was 1000)
 
 
 - type: latheRecipe
@@ -1532,12 +1562,12 @@
   requiresBlueprint: true
   availableFaction:
   - NCR
-  materials: # #Burger - increased cost of ammo boxes to make up for higher capacity
-    Lead: 250 # #Burger - increased (was 85)
+  materials: # #Burger - Decreased cost of ammo boxes to make up for larger size in bag the less use cases that causes.
+    Lead: 150 # #Burger - Decreased (was 250)
 
-    N14Brass: 170 # #Burger - increased (was 55)
+    N14Brass: 60 # #Burger - Decreased (was 170)
 
-    N14Gunpowder: 170 # #Burger - increased (was 55)
+    N14Gunpowder: 100 # #Burger - Decreased (was 170)
 
 
 - type: latheRecipe
@@ -1602,6 +1632,21 @@
     Lead: 500
 
     N14Gunpowder: 300
+
+- type: latheRecipe
+  id: N14BPNCRAmmoBoxOver308
+  result: N14AmmoBoxOver308
+  category: N14BlueprintNCRAmmoT4
+  completetime: 8
+  requiresBlueprint: true
+  availableFaction:
+      - NCR
+  materials:
+    Steel: 150
+
+    N14Brass: 75
+
+    N14Gunpowder: 125
 
 - type: latheRecipe
   id: N14BPNCRAmmoMagTopSMG12mm
@@ -2021,6 +2066,19 @@
   materials:
     Steel: 3500
     Wood: 1500
+    N14Iron: 500
+
+- type: latheRecipe
+  id: N14BPLegionWeaponSniperPaciencia
+  result: N14WeaponSniperPaciencia
+  category: N14BlueprintLegionWeaponsT2
+  completetime: 9
+  requiresBlueprint: true
+  availableFaction:
+  - CaesarLegion
+  materials:
+    Steel: 4000
+    Wood: 2500
     N14Iron: 500
 
 # --- Legion Tier 3 Weapons (Veteran grade) ---
@@ -2462,6 +2520,40 @@
     N14Iron: 500
 
 - type: latheRecipe
+  id: N14BPLegionArmorExplorerArmor
+  result: N14ClothingOuterLegionnaireExplorerArmor
+  category: N14BlueprintLegionArmorT3
+  completetime: 12
+  requiresBlueprint: true
+  availableFaction:
+  - CaesarLegion
+  materials:
+    Leather: 1400
+
+    Cloth: 800
+
+    Thread: 600
+
+    N14Iron: 500
+
+- type: latheRecipe
+  id: N14BPLegionArmorVexillariusArmor
+  result: N14ClothingOuterLegionnaireVexillariusArmor
+  category: N14BlueprintLegionArmorT3
+  completetime: 12
+  requiresBlueprint: true
+  availableFaction:
+  - CaesarLegion
+  materials:
+    Leather: 1500
+
+    Cloth: 800
+
+    Thread: 600
+
+    N14Iron: 500
+
+- type: latheRecipe
   id: N14BPLegionArmorBaseballHelmet
   result: N14ClothingHeadHatBaseballHelmet
   category: N14BlueprintLegionArmorT3
@@ -2532,7 +2624,7 @@
   availableFaction:
   - CaesarLegion
   materials:
-    Steel: 9500
+    Steel: 8500
 
     N14Iron: 700
 
@@ -2723,6 +2815,21 @@
     N14Brass: 35
     N14Gunpowder: 35
 
+- type: latheRecipe
+  id: MisfitsBPLegionSuicideVest
+  result: MisfitsSuicideVest
+  category: N14BlueprintLegionAmmoT2
+  completetime: 12
+  requiresBlueprint: true
+  applyMaterialDiscount: false
+  availableFaction:
+  - CaesarLegion
+  materials:
+    Cloth: 100
+    Leather: 100
+    N14Gunpowder: 500
+    Steel: 200
+
 # --- Legion Tier 3 Ammo ---
 - type: latheRecipe
   id: N14BPLegionAmmoBox45-70
@@ -2800,6 +2907,21 @@
     N14Gunpowder: 1200
 
     N14Iron: 500
+
+# #Misfits Add - Issue #968 faction ordnance: Legion improvised tin grenade.
+- type: latheRecipe
+  id: MisfitsBPLegionGrenadeTin
+  result: N14TinNade
+  category: N14BlueprintLegionAmmoT3
+  completetime: 8
+  requiresBlueprint: true
+  applyMaterialDiscount: false
+  availableFaction:
+  - CaesarLegion
+  materials:
+    Steel: 500
+    N14Gunpowder: 700
+    Scrap: 500
 
 
 # #Misfits Add - T3 ammo parity: 7.62mm for SKS, and craftable dynamite (Legion explosive doctrine)
@@ -2879,14 +3001,14 @@
   requiresBlueprint: true
   availableFaction:
   - CaesarLegion
-  materials:
-    Lead: 1000
+  materials: # #Burger - mat costs was absurdly high compared to non BP recipe (you could misclick it)
+    Lead: 75 # #Burger - (was 1000)
 
-    N14Brass: 300
+    N14Brass: 75 # #Burger - (was 300)
 
-    N14Gunpowder: 500
+    N14Gunpowder: 75 # #Burger - (was 500)
 
-    Steel: 1000
+    Steel: 100 # #Burger - (was 1000)
 
 
 - type: latheRecipe
@@ -2952,8 +3074,22 @@
 
     Lead: 500
 
-    N14Gunpowder: 750
+    N14Gunpowder: 75
 
+- type: latheRecipe
+  id: N14BPLegionAmmoBoxOver308
+  result: N14AmmoBoxOver308
+  category: N14BlueprintLegionAmmoT4
+  completetime: 8
+  requiresBlueprint: true
+  availableFaction:
+  - CaesarLegion
+  materials:
+    Steel: 150
+
+    N14Brass: 75
+
+    N14Gunpowder: 125
 
 # =====================================================================
 # #Misfits Add - HELMET RECIPES

@@ -9,6 +9,9 @@ job-description-ncr-commander = You command the NCR detachment. Set operational 
 job-name-ncr-executive-officer = NCR Executive Officer
 job-description-ncr-executive-officer = You are the Commander's second, managing the detachment's day-to-day operations and keeping the NCOs in line. Lead by example and bridge command and the ranks below.
 
+job-name-lieutenant-colonel = NCR Lieutenant Colonel
+job-description-ltcol = You command the NCR detachment at the highest field level, coordinating officers, squads, and strategy while answering only to senior command. Legends tell you jumped all the way from staff sergeant.
+
 job-name-ncr-platoon-leader = NCR Platoon Leader
 job-description-ncr-platoon-leader = You lead a platoon in the field, directing NCOs and executing the Commander's orders. Your commision begins at 2LT — earn your 1LT through service.
 
@@ -96,6 +99,10 @@ job-description-supermutant-ranger = You are a supermutant who has learned patie
 job-name-supermutant-trooper = Supermutant Trooper
 job-description-supermutant-trooper = You are the hammer — a supermutant front-liner built for direct assault. Your trooper armor can soak punishment that would shred a human, and you intend to make the most of it.
 
+# #Misfits Add - Enclave Supermutant (whitelist supermutant serving the Enclave)
+job-name-supermutant-enclave = Enclave Supermutant
+job-description-supermutant-enclave = A Supermutant working for the United States. Service Guarantees Citizenship!
+
 # #Misfits Add - NCR-aligned supermutant variants for the FEVMutants whitelist department.
 job-name-supermutant-ncr-ranger = Supermutant NCR Ranger
 job-description-supermutant-ncr-ranger = You are a supermutant who earned a place among the NCR Rangers — an unlikely alliance forged in blood and mutual necessity. Your ranger armor and NCR badge open doors that your fists would otherwise destroy.
@@ -128,10 +135,19 @@ job-name-follower-guard = Followers Guard
 job-description-follower-guard = You protect the Followers' clinic, escort doctors into dangerous ground, and keep desperate people from turning the humanitarian mission into another battlefield.
 job-name-follower-volunteer = Followers Volunteer
 job-description-follower-volunteer = You are new to the Followers. You believe knowledge and compassion can outlast bullets and bombs. Prove it — learn from those above you and help anyone who needs it.
+job-name-follower-director = Followers Director
+job-description-follower-director = You head the follower's training program, teaching new volunteers the ways of the Followers and how to survive in the wastes.
 
 # #Misfits Add - Supermutant Follower Doctor job locale.
 job-name-supermutant-follower-doctor = Supermutant Follower Doctor
 job-description-supermutant-follower-doctor = A SuperMutant trained in the ways of medicine.
+
+# Bwonsamdi keeps the original internal SentientDeathclaw job ID for whitelist compatibility.
+job-name-bwonsamdi = Bwonsamdi [CYTHISIA]
+job-description-bwonsamdi = You are Bwonsamdi, a deathclaw of unnatural strength bound to the loa of death. Sense the fallen, ferry willing souls, and make the wastes remember that every life eventually reaches the grave.
+
+job-name-sentient-deathclaw = Sentient Deathclaw [RESTRICTED]
+job-description-sentient-deathclaw = You are an unusually intelligent deathclaw capable of speech, reason, and choosing your own place in the wastes. You possess a deathclaw's natural strength, but none of Bwonsamdi's authority over death or the loa.
 
 # #Misfits Add — Western BoS chapter command-tier jobs (Elder + Head Scribe).
 # These keys were commented out in the Corvax locale when the Corvax west-BoS chapter
@@ -149,18 +165,19 @@ job-description-bos-paladin = Fight as the Brotherhood's frontline heavy infantr
 job-name-bos-knight = Brotherhood Knight
 job-description-bos-knight = Protect the chapter, escort missions, and recover technology in the field.
 # #Misfits Add - Brotherhood Lancers, the chapter's aviation branch.
-job-name-bos-lancer-captain = Brotherhood Lancer-Captain
-job-description-bos-lancer-captain = You command the chapter's Lancers and fly its vertibird. Keep the bird in the air, move the Brotherhood's people and salvage, and remember that the machine is Brotherhood property first and your ride second.
-job-name-bos-lancer-knight = Brotherhood Lancer-Knight
-job-description-bos-lancer-knight = You are the crew chief. You ride the co-pilot seat, work the turret over whatever the Captain flies you across, and keep the gun fed. When the bird is down you are on the airframe with everyone else.
-job-name-bos-lancer = Brotherhood Lancer
-job-description-bos-lancer = You are deck crew. The vertibird comes back chewed up and it is your torch that puts it right, your hands that clear the pad and load the cargo. Nobody flies anywhere without you.
+# Knight-Lancer is the branch's sole role and receives the vertibird pilot perk.
+job-name-bos-lancer-knight = Brotherhood Knight-Lancer
+job-description-bos-lancer-knight = You are the Brotherhood's vertibird pilot, crew chief, door gunner, and deck crew. Keep the bird in the air, work the turret, and put it right with your torch when it is down.
 job-name-bos-scribe = Brotherhood Scribe
 job-description-bos-scribe = Support the chapter with research, medicine, and technical expertise.
 job-name-bos-initiate = Brotherhood Initiate
 job-description-bos-initiate = Learn the Brotherhood's code, follow orders, and earn your place in the chapter.
 job-name-bos-eyebot = Brotherhood Eyebot
 job-description-bos-eyebot = Serve the Brotherhood of Steel as a loyal robotic companion.
+
+# #Misfits Add - Enclave Eyebot pet ghost-role job (playtime attribution only)
+job-name-enclave-eyebot = Enclave Eyebot
+job-description-enclave-eyebot = Serve the Enclave as a loyal robotic reconnaissance companion.
 
 # #Misfits Add — Squire loadout kit locale for new Misfits_SqrBasic_Set.
 # #Misfits Tweak: Removed rank prefix so the kit name is role-neutral.
@@ -186,6 +203,8 @@ job-description-synthetic-protectron-tribal = An agricultural robot that has bee
 # Legion Acolyte of Mars
 job-name-caesar-legion-Acolyte-of-mars = Acolyte of Mars
 job-description-caesar-legion-Acolyte-of-mars = You are a devoted Acolyte of Mars, you answer to the Priestess directly.
+job-name-caesar-legion-temple-guard = Temple Guard
+job-description-caesar-legion-temple-guard = Protect and fight for the Priestess and her acolytes, defend the sacred Temples, and enforce the law of Mars.
 
 job-name-bos-off-duty = Off Duty BOS
 job-description-bos-off-duty = You are an off-duty member of the Brotherhood of Steel. You are not to participate in operations as this week you are not on duty. To do so is to violate the codex.

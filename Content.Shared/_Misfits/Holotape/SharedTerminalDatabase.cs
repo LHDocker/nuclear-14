@@ -346,6 +346,35 @@ public sealed class EditDatabaseDocumentMessage : BoundUserInterfaceMessage
 }
 
 /// <summary>
+/// Leadership-tier structural action: rename a folder, subfolder, or document title.
+/// Exactly one of FolderId / SubfolderParentFolderId+SubfolderId / DocumentId is set.
+/// The server resolves authority and sanitises the submitted name.
+/// </summary>
+[Serializable, NetSerializable]
+public sealed class RenameDatabaseEntryMessage : BoundUserInterfaceMessage
+{
+    public readonly Guid? FolderId;
+    public readonly Guid? SubfolderParentFolderId;
+    public readonly Guid? SubfolderId;
+    public readonly Guid? DocumentId;
+    public readonly string Name;
+
+    public RenameDatabaseEntryMessage(
+        string name,
+        Guid? folderId = null,
+        Guid? subfolderParentFolderId = null,
+        Guid? subfolderId = null,
+        Guid? documentId = null)
+    {
+        Name = name;
+        FolderId = folderId;
+        SubfolderParentFolderId = subfolderParentFolderId;
+        SubfolderId = subfolderId;
+        DocumentId = documentId;
+    }
+}
+
+/// <summary>
 /// Soft-delete a folder (and all its contents) or a subfolder.
 /// Use SubfolderId == null to delete a top-level folder; non-null deletes only that subfolder.
 /// </summary>
@@ -459,5 +488,48 @@ public sealed class PermanentDeleteDatabaseEntryMessage : BoundUserInterfaceMess
         SubfolderParentFolderId = subfolderParentFolderId;
         SubfolderId = subfolderId;
         DocumentId = documentId;
+    }
+}
+
+// #Misfits Add - Leadership-tier action: MOVE a folder, subfolder, or document into another
+// container (tidying / organizing). This is NOT a delete — the entry stays fully visible,
+// just relocated. Intended flow: leadership moves unwanted entries into a folder they create
+// (e.g. "TRASH"), then Admin-tier roles permanently delete the trash as they already can.
+// Exactly one of FolderId / SubfolderParentFolderId+SubfolderId / DocumentId is set (source).
+// TargetFolderId + TargetSubfolderId identify the destination container (subfolder destination
+// is only valid for document moves — subfolders cannot nest).
+[Serializable, NetSerializable]
+public sealed class MoveDatabaseEntryMessage : BoundUserInterfaceMessage
+{
+    // ── Source entry (exactly one group set) ───────────────────────────────
+    /// <summary>Set to move a top-level folder (becomes a subfolder of the target).</summary>
+    public readonly Guid? FolderId;
+    /// <summary>Current parent folder of the subfolder to move.</summary>
+    public readonly Guid? SubfolderParentFolderId;
+    /// <summary>Subfolder to move (must be set with SubfolderParentFolderId).</summary>
+    public readonly Guid? SubfolderId;
+    /// <summary>Set to move a single document.</summary>
+    public readonly Guid? DocumentId;
+
+    // ── Destination container ──────────────────────────────────────────────
+    /// <summary>Destination top-level folder.</summary>
+    public readonly Guid? TargetFolderId;
+    /// <summary>Destination subfolder (null = folder root). Only valid for document moves.</summary>
+    public readonly Guid? TargetSubfolderId;
+
+    public MoveDatabaseEntryMessage(
+        Guid? folderId = null,
+        Guid? subfolderParentFolderId = null,
+        Guid? subfolderId = null,
+        Guid? documentId = null,
+        Guid? targetFolderId = null,
+        Guid? targetSubfolderId = null)
+    {
+        FolderId = folderId;
+        SubfolderParentFolderId = subfolderParentFolderId;
+        SubfolderId = subfolderId;
+        DocumentId = documentId;
+        TargetFolderId = targetFolderId;
+        TargetSubfolderId = targetSubfolderId;
     }
 }

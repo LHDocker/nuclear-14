@@ -80,18 +80,6 @@
     Steel: 2000
     Wood: 1000
 
-- type: latheRecipe
-  id: N14BPVaultWeaponSMGAmerican180
-  result: N14WeaponSMGAmerican180
-  category: N14BlueprintVaultWeaponsT1
-  completetime: 7
-  requiresBlueprint: true
-  availableFaction:
-  - Vault
-  materials:
-    Steel: 2500
-    Plastic: 100
-
 # --- Vault Tier 2 Weapons (Advanced security) ---
 - type: latheRecipe
   id: N14BPVaultWeaponSMG10mm
@@ -157,6 +145,20 @@
     Steel: 3500
     Plastic: 100
     N14Iron: 500
+
+- type: latheRecipe
+  id: N14BPVaultWeaponAmerican180
+  result: N14WeaponSMGAmerican180
+  category: N14BlueprintVaultWeaponsT2
+  completetime: 12
+  requiresBlueprint: true
+  availableFaction:
+  - Vault
+  materials:
+    Steel: 8000
+    Plastic: 1500
+    N14Silver: 500
+    N14Gold: 300
 
 # --- Vault Tier 3 Weapons (R&D energy weapons) ---
 - type: latheRecipe
@@ -266,6 +268,24 @@
     ScrapElectronic: 575
     Plastic: 750
     N14Gold: 500
+
+# THE PLASMA CASTER RECIPE (rewards the grind)
+- type: latheRecipe
+  id: N14BPVaultWeaponPlasmaCaster
+  result: N14WeaponPlasmaCaster
+  category: N14BlueprintVaultWeaponsT4
+  completetime: 40
+  requiresBlueprint: true
+  availableFaction:
+  - Vault
+  materials:
+    Steel: 40000
+    Glass: 5000
+    Circuitry: 2000
+    ScrapElectronic: 1000
+    Plastic: 1000
+    N14Gold: 500
+    N14Silver: 500
 
 # =====================================================================
 # VAULT ARMOR RECIPES
@@ -381,6 +401,22 @@
     Circuitry: 400
     ScrapElectronic: 1000
     N14Iron: 1500
+
+- type: latheRecipe
+  id: N14BPVaultArmorScoutSuit
+  result: N14ClothingOuterVaultScoutSuit
+  category: N14BlueprintVaultArmorT4
+  completetime: 50
+  requiresBlueprint: true
+  availableFaction:
+  - Vault
+  materials:
+    Steel: 20000
+    Cloth: 1500
+    Thread: 1000
+    Circuitry: 1500
+    ScrapElectronic: 1000
+    Plastic: 1200
 
 # =====================================================================
 # VAULT AMMO RECIPES

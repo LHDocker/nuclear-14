@@ -556,6 +556,36 @@
     sound:
       path: /Audio/Effects/unwrap.ogg
 
+- type: entity
+  name: specialist's operative kit
+  parent: KitBase
+  id: KitNCR_WSOperative
+  description: A crate containing all an NCR weapon specialist needs to perform their job.
+  components:
+  - type: Sprite
+    state: pointman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14ClothingUniformNCRRecon
+      - id: ClothingBeltNCR
+      - id: N14ClothingHeadHatNCRBeretRecon
+      - id: N14ClothingNeckCloakNCR # Forge-Change
+      - id: N14WeaponRifleOperative
+      - id: Magazine556Rifle
+        amount: 3
+      - id: N14WeaponPistol45Colt
+      - id: N14MagazinePistol45
+        amount: 2
+      - id: N14BoxCardboardMREBoxCFilled
+      - id: N14Stimpak
+      - id: N14RadAwayBloodbag
+      - id: N14CleanGauze10
+      - id: N14Flare
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
 # NCRA Sergeant Kits
 
 - type: entity
@@ -930,6 +960,29 @@
     sound:
       path: /Audio/Effects/unwrap.ogg
 
+- type: entity
+  name: ranger operative kit
+  parent: KitBase
+  id: KitOperativeRanger
+  description: A crate containing advanced weaponry for members of the Rangers.
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: ClothingBeltNCR
+      - id: N14WeaponRifleOperative
+      - id: Magazine556Rifle
+        amount: 3
+      - id: MagazineBox556
+      - id: N14Stimpak
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14CombatKnife
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
 #MARK: Veteran Kits
 
 - type: entity
@@ -1141,6 +1194,8 @@
       - id: N14Stimpak
       - id: N14BoxCardboardMREBoxKFilled
       - id: N14ClothingOuterCombatArmorSeniorBOS
+      - id: MisfitsGrenadeFragDefensive # #Misfits Add - faction council Senior Knight ordnance
+      - id: EmpGrenade
 
 - type: entity
   name: BoS Senior Knight Laser Kit
@@ -1164,6 +1219,8 @@
       - id: N14Stimpak
       - id: N14BoxCardboardMREBoxKFilled
       - id: N14ClothingOuterCombatArmorSeniorBOS
+      - id: MisfitsGrenadeFragDefensive # #Misfits Add - faction council Senior Knight ordnance
+      - id: EmpGrenade
 
 - type: entity
   name: BoS Recon Knight Kit
@@ -1177,7 +1234,7 @@
     size: Huge
   - type: SpawnItemsOnUse
     items:
-      - id: N14WeaponRevolver44Magnun
+      - id: N14WeaponRevolver44Magnum
       - id: N14SpeedLoader44Magnum
         amount: 2
       - id: N14AmmoBox44Magnum
@@ -1186,6 +1243,7 @@
       - id: N14BoxCardboardMREBoxKFilled
       - id: N14ClothingOuterMidwestReconArmor
       - id: N14ClothingHeadHatBrotherhoodMidwestHelmetRecon
+      - id: SmokeGrenade # #Misfits Add - faction council Recon Knight ordnance
 
 - type: entity
   name: BoS Knight Ballistic Kit
@@ -1235,6 +1293,7 @@
       - id: N14WeaponLaserPistol
       - id: N14PowerCellSmall
         amount: 2
+      - id: MisfitsGrenadeWhitePhosphorus # #Misfits Add - faction council Medical Scribe ordnance
 
 # MBoS Scribe Field Kit
 - type: entity
@@ -1260,6 +1319,7 @@
       - id: N14WeaponLaserPistol
       - id: N14PowerCellSmall
         amount: 2
+      - id: MisfitsGrenadePlasma # #Misfits Add - faction council Field Scribe ordnance
 
 # MBoS Scribe Engineer Kit
 - type: entity
@@ -1284,6 +1344,8 @@
       - id: N14WeaponLaserPistol
       - id: N14PowerCellSmall
         amount: 2
+      - id: EmpGrenade # #Misfits Add - faction council Engineering Scribe ordnance
+      - id: MisfitsMilitaryDetonator # #Misfits Add - long-range initiator for Scribe demolition work
 
 # MBoS Paladin Kits
 #Misfits Change /Tweak/: Replaced auto laser rifle with auto shotgun + laser pistol sidearm.
@@ -1775,7 +1837,7 @@
       - id: N14WeaponSniper45-70BrushGun
       - id: MagazineBox45-70
         amount: 3
-      - id: N14WeaponRevolver44Magnun
+      - id: N14WeaponRevolver44Magnum
       - id: SpeedLoader44
         amount: 2
       - id: N14CleanGauze10
@@ -1844,7 +1906,7 @@
     items:
       - id: N14ClothingHeadTownGuardBrodieCover
       - id: N14ClothingOuterTownGuardRiot
-      - id: N14WeaponBlowback
+      - id: N14WeaponShotgunBlowback
       - id: MagazineBox12gauge
       - id: N14WeaponPistolWebley
       - id: N14MagazinePistol9mm

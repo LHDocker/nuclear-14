@@ -1,3 +1,47 @@
+using Content.Shared.Weapons.Ranged;
+using Content.Shared.Weapons.Ranged.Components;
+
+namespace Content.Server.Weapons.Ranged.Systems;
+
+public sealed partial class GunSystem
+{
+
+
+    protected override void CycleCartridge(EntityUid seeder, EntityUid cart, int sequence)
+    {
+        var seed = GetNetEntity(seeder).Id;
+        var giverXform = (seeder, Transform(seeder));
+        var xform = (cart, Transform(cart));
+
+        PlaceNextToRot(xform, giverXform);
+        EjectCartRNG(cart, sequence, seed);
+    }
+    /*
+    public override void DoAmmoInsert(List<(EntityUid? Entity, IShootable Shootable)> ammo, BallisticAmmoProviderComponent recieverComp, EntityUid recieverUid, EntityUid? User = null)
+    {
+        foreach (var (shotUID, _) in ammo)
+        {
+            Containers.Insert(shotUID!.Value, recieverComp.Container);
+        }
+
+        // todo: change recieverComp update
+        recieverComp.SpawnedCountPredict += ammo.Count;
+        recieverComp.IndexPredict = recieverComp.IndexPredict + ammo.Count;
+        Dirty(recieverUid, recieverComp);
+        UpdateBallisticAppearance(recieverUid, recieverComp);
+        UpdateAmmoCount(recieverUid);
+
+    }
+    */
+}
+
+
+
+
+
+
+
+
 
 /// Misfit Change: outdated. Client/Server Implementation in <see cref="SharedGunSystem.Ballistics"/>
 

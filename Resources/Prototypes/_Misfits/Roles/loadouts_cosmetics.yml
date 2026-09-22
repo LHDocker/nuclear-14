@@ -319,7 +319,7 @@
 
 - type: loadout
   id: MisfitsLoadoutHandsNCR
-  category: Accessories
+  category: Hands
   cost: 0
   requirements:
     - !type:CharacterItemGroupRequirement
@@ -533,7 +533,7 @@
 
 - type: loadout
   id: MisfitsLoadoutHeadNCRSidecap
-  category: Accessories
+  category: Head
   cost: 0
   requirements:
     - !type:CharacterJobRequirement
@@ -559,7 +559,7 @@
 
 - type: loadout
   id: MisfitsLoadoutHeadNCRBeretOfficer
-  category: Accessories
+  category: Head
   cost: 0
   requirements:
     - !type:CharacterJobRequirement
@@ -574,7 +574,7 @@
 
 - type: loadout
   id: MisfitsLoadoutHeadNCRBeretMedic
-  category: Accessories
+  category: Head
   cost: 0
   requirements:
     - !type:CharacterJobRequirement
@@ -585,7 +585,7 @@
 
 - type: loadout
   id: MisfitsLoadoutHeadNCRBeretQM
-  category: Accessories
+  category: Head
   cost: 0
   requirements:
     - !type:CharacterJobRequirement
@@ -602,7 +602,7 @@
 
 - type: loadout
   id: MisfitsLoadoutNeckNCRmantleQM
-  category: Accessories
+  category: Head
   cost: 0
   requirements:
     - !type:CharacterJobRequirement
@@ -613,7 +613,7 @@
 
 - type: loadout
   id: MisfitsLoadoutHeadNCRSlouch
-  category: Accessories
+  category: Head
   cost: 0
   requirements:
     - !type:CharacterJobRequirement
@@ -646,7 +646,7 @@
 
 - type: loadout
   id: MisfitsLoadoutHeadArmyBeretRanger
-  category: Accessories
+  category: Head
   cost: 0
   requirements:
     - !type:CharacterJobRequirement
@@ -661,7 +661,7 @@
 
 - type: loadout
   id: MisfitsLoadoutHeadNCRBeretRecon
-  category: Accessories
+  category: Head
   cost: 0
   requirements:
     - !type:CharacterJobRequirement
@@ -676,7 +676,7 @@
 
 - type: loadout
   id: MisfitsLoadoutHeadRanger
-  category: Accessories
+  category: Head
   cost: 0
   requirements:
     - !type:CharacterJobRequirement
@@ -691,7 +691,7 @@
 
 - type: loadout
   id: MisfitsLoadoutHeadRangerB
-  category: Accessories
+  category: Head
   cost: 0
   requirements:
     - !type:CharacterJobRequirement
@@ -719,14 +719,14 @@
         - BoSScribe
         - BoSPaladin
         - BoSMidKnight
-        - BoSLancerCaptain
         - BoSLancerKnight
-        - BoSLancer
+        # #Cythisiax Removed - Lancer rank folded into Lancer-Knight
         - BoSMidPaladin
         - BoSWestScribe
         - BoSMidScribe
         - BoSHeadKnight
         - BoSMidPaladinCommander
+        - BoSHonorGuard # #Cythisiax Added - Honor Guard gets the shared BoS cosmetic cap
         - BoSWestElderCommander
   items:
     - N14ClothingHeadHatBrotherhoodCap
@@ -744,12 +744,12 @@
         - BoSScribe
         - BoSPaladin
         - BoSMidKnight
-        - BoSLancerCaptain
         - BoSMidPaladin
         - BoSWestScribe
         - BoSMidScribe
         - BoSHeadKnight
         - BoSMidPaladinCommander
+        - BoSHonorGuard # #Cythisiax Added - Honor Guard gets the shared BoS cosmetic beret
         - BoSWestElderCommander
   items:
     - N14ClothingHeadHatBrotherhoodBeret
@@ -767,9 +767,8 @@
         - BoSScribe
         - BoSPaladin
         - BoSMidKnight
-        - BoSLancerCaptain
         - BoSLancerKnight
-        - BoSLancer
+        # #Cythisiax Removed - Lancer rank folded into Lancer-Knight
         - BoSMidPaladin
         - BoSWestScribe
         - BoSMidScribe
@@ -991,17 +990,13 @@
   requirements:
     - !type:CharacterJobRequirement
       jobs:
-        # #Misfits Change - Khan removed (job deactivated); old Eighties replaced by 5-rank department.
+        # #Misfits Change - Great Khan restored alongside the Eighties department.
         - EightiesTheBlock
         - EightiesCylinders
         - EightiesPistons
         - EightiesOilers
         - EightiesRoadRash
-        - WhiteLegs
-        - WhiteLegsWarChief
-        - WhiteLegsBoneBreaker
-        - WhiteLegsStormDrummer
-        - WhiteLegsPainMaker
+        - GreatKhan
   items:
     - N14ClothingShoesRaider
 
@@ -1278,7 +1273,7 @@
 
 - type: loadout
   id: MisfitsLoadoutNeckCloakNCR
-  category: Accessories
+  category: Neck
   cost: 0
   exclusive: true
   requirements:
@@ -1307,7 +1302,7 @@
 
 - type: loadout
   id: MisfitsLoadoutNeckCloakNCRSnow
-  category: Accessories
+  category: Neck
   cost: 0
   exclusive: true
   requirements:
@@ -1336,7 +1331,7 @@
 
 - type: loadout
   id: MisfitsLoadoutNeckMantleNCR
-  category: Accessories
+  category: Neck
   cost: 0
   exclusive: true
   requirements:
@@ -1359,7 +1354,7 @@
 
 - type: loadout
   id: MisfitsLoadoutNeckCloakNCRWoods
-  category: Accessories
+  category: Neck
   cost: 0
   exclusive: true
   requirements:
@@ -1379,7 +1374,7 @@
 
 - type: loadout
   id: MisfitsLoadoutNeckCloakTribal
-  category: Accessories
+  category: Neck
   cost: 0
   exclusive: true
   requirements:

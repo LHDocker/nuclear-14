@@ -168,6 +168,13 @@ namespace Content.Client.Lobby.UI
                 ("C27BoS", "humanoid-profile-editor-robot-model-c27-bos"),
                 ("C27ZAX", "humanoid-profile-editor-robot-model-c27-zax"),
             },
+            // Ordinary Deathclaw life stages share the same whitelist/job. Bwonsamdi is intentionally excluded.
+            ["Deathclaw"] = new[]
+            {
+                ("Deathclaw", "humanoid-profile-editor-deathclaw-variant-adult"),
+                ("DeathclawAdolescent", "humanoid-profile-editor-deathclaw-variant-adolescent"),
+                ("DeathclawHatchling", "humanoid-profile-editor-deathclaw-variant-hatchling"),
+            },
         };
 
         private readonly Dictionary<string, BoxContainer> _jobCategories;
@@ -398,6 +405,7 @@ namespace Content.Client.Lobby.UI
                 UpdateCustomSpecieNameEdit();
                 UpdateHeightWidthSliders();
                 UpdateRobotAppearanceFieldVisibility(); // #Misfits Add: robot species hide unsupported appearance fields while keeping skin color editable.
+                UpdateDeathclawAppearanceFieldVisibility(); // # #Cythisiax Add: deathclaw hides unsupported fields, keeps height/width.
                 UpdateRobotModelSelector(); // #Misfits Add: refresh model picker when species changes.
             };
 
@@ -877,7 +885,7 @@ namespace Content.Client.Lobby.UI
 
             for (var i = 0; i < _species.Count; i++)
             {
-                if (IsHiddenProtectronVariantSpecies(_species[i].ID))
+                if (IsHiddenModelVariantSpecies(_species[i].ID))
                     continue;
 
                 var buttonId = _speciesButtonSpeciesIds.Count;
@@ -1098,6 +1106,7 @@ namespace Content.Client.Lobby.UI
             UpdateCharacterRequired();
             UpdateSpecialControls();
             UpdateRobotAppearanceFieldVisibility(); // #Misfits Add: keep robot-only field visibility consistent after profile load/reset.
+            UpdateDeathclawAppearanceFieldVisibility(); // # #Cythisiax Add: keep deathclaw appearance field visibility consistent after load/reset.
             UpdateRobotModelSelector(); // #Misfits Add: keep Robot Model selector in sync after profile load/reset.
 
             UpdateRoundEndAnonymityCheckBox(); // #Cythisiax Added - sync round-end anonymity toggle
@@ -1830,6 +1839,7 @@ namespace Content.Client.Lobby.UI
             UpdateSpeciesGuidebookIcon();
             UpdateTabVisibility(newSpecies); // #Misfits Change: hide tabs for restricted species
             UpdateRobotAppearanceFieldVisibility(); // #Misfits Add: apply robot-specific appearance field locks immediately after species swap.
+            UpdateDeathclawAppearanceFieldVisibility(); // # #Cythisiax Add: apply deathclaw appearance field locks immediately after species swap.
             UpdateRobotModelSelector(); // #Misfits Add: update model selector to match selected Protectron variant.
             IsDirty = true;
             ReloadProfilePreview();
@@ -1903,14 +1913,40 @@ namespace Content.Client.Lobby.UI
                 return;
 
             var isRobotSpecies = IsRobotSpecies(Profile.Species);
+            var isC27Species = Profile.Species is "C27" or "C27NCR" or "C27BoS" or "C27ZAX";
 
             EyesContainer.Visible = !isRobotSpecies;
-            HeightContainer.Visible = !isRobotSpecies;
+            HeightContainer.Visible = !isRobotSpecies || isC27Species;
             WidthContainer.Visible = !isRobotSpecies;
             WeightContainer.Visible = !isRobotSpecies;
             ClothingContainer.Visible = !isRobotSpecies;
             LoadoutsContainer.Visible = !isRobotSpecies;
             SexContainer.Visible = !isRobotSpecies;
+        }
+
+        // # #Cythisiax Changed - Deathclaw species hides unsupported appearance fields (mirrors robots).
+        // Ordinary Deathclaws are locked to standard sprite size (size sliders hidden); only Bwonsamdi
+        // (BwonsamdiDeathclaw) keeps the height/width sliders.
+        private void UpdateDeathclawAppearanceFieldVisibility()
+        {
+            if (Profile == null)
+                return;
+
+            var isDeathclaw = Profile.Species == "Deathclaw"
+                || Profile.Species == "DeathclawAdolescent"
+                || Profile.Species == "DeathclawHatchling"
+                || Profile.Species == "BwonsamdiDeathclaw";
+            var isFixedSize = Profile.Species == "Deathclaw"
+                || Profile.Species == "DeathclawAdolescent"
+                || Profile.Species == "DeathclawHatchling"; // # #Cythisiax - ordinary sentient Deathclaws use fixed life-stage sprites
+
+            EyesContainer.Visible = !isDeathclaw;
+            WeightContainer.Visible = !isDeathclaw;
+            ClothingContainer.Visible = !isDeathclaw;
+            LoadoutsContainer.Visible = !isDeathclaw;
+            SexContainer.Visible = !isDeathclaw;
+            HeightContainer.Visible = !isFixedSize; // # #Cythisiax - only Bwonsamdi can adjust height
+            WidthContainer.Visible = !isFixedSize;  // # #Cythisiax - only Bwonsamdi can adjust width
         }
 
         // #Misfits Add: helper for species checks used by robot-specific character editor behavior.
@@ -1947,8 +1983,8 @@ namespace Content.Client.Lobby.UI
                 || speciesId == "RobotProtectronTribal";
         }
 
-        // #Misfits Add: variant species are hidden from the main Species dropdown and driven by Robot Model selector.
-        private static bool IsHiddenProtectronVariantSpecies(string speciesId)
+        // #Misfits Add: non-base model variants are hidden from the main Species dropdown.
+        private static bool IsHiddenModelVariantSpecies(string speciesId)
         {
             return speciesId == "RobotMrHandyZAX"
                 || speciesId == "RobotProtectronPolice"
@@ -1974,7 +2010,9 @@ namespace Content.Client.Lobby.UI
                 || speciesId == "C27NCR" // #Misfits Add - C-27 NCR variant picked via Robot Model dropdown
                 || speciesId == "C27BoS" // #Misfits Add - C-27 Brotherhood variant picked via Robot Model dropdown
                 || speciesId == "C27ZAX" // #Misfits Add - C-27 Z.A.X variant picked via Robot Model dropdown
-                || speciesId == "RobotProtectronTribal"; // Misfits Add - Protectron Spirit-Tender
+                || speciesId == "RobotProtectronTribal" // Misfits Add - Protectron Spirit-Tender
+                || speciesId == "DeathclawAdolescent"
+                || speciesId == "DeathclawHatchling";
         }
 
         // #Misfits Add: normalize hidden variants to base Protectron in main species selector.
@@ -1983,7 +2021,7 @@ namespace Content.Client.Lobby.UI
             if (speciesId == null)
                 return null;
 
-            if (!IsHiddenProtectronVariantSpecies(speciesId))
+            if (!IsHiddenModelVariantSpecies(speciesId))
                 return speciesId;
 
             // Map hidden variants back to their base species for the main dropdown.
