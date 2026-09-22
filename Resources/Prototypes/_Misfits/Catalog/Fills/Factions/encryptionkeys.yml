@@ -77,12 +77,12 @@
 - type: entity
   name: ncr encryption key box
   parent: BoxCardboard
-  id: BoxEncryptionKeyNCROSI
+  id: BoxEncryptionKeyOSI
   description: A box of spare encryption keys.
   components:
   - type: StorageFill
     contents:
-    - id: EncryptionKeyNCROSI
+    - id: EncryptionKeyOSI
       amount: 6
   - type: Sprite
     layers:
