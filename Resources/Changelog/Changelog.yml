@@ -11786,3 +11786,99 @@ Entries:
   id: 6457
   time: '2026-09-19T01:28:36.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1950
+- author: cythisiax
+  changes:
+    - type: Add
+      message: blood decals fade over time
+  id: 6458
+  time: '2026-09-19T23:21:52.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1956
+- author: Lucky
+  changes:
+    - type: Tweak
+      message: Moved the ranger base.
+    - type: Tweak
+      message: Old ranger base is now a POI.
+    - type: Tweak
+      message: Extended railway tunnel at NCR.
+    - type: Fix
+      message: Most BOS bunkerwalls are no longer indestructible.
+    - type: Fix
+      message: Replaced the fridge in the Town.
+    - type: Tweak
+      message: Minor loot replacements.
+    - type: Add
+      message: Spawns for NCR Lt.Col and FotA Director.
+  id: 6459
+  time: '2026-09-19T23:23:27.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1955
+- author: The Brickthrowers
+  changes:
+    - type: Add
+      message: Due to recent developments in masonry, bricks are slightly cheaper!
+  id: 6460
+  time: '2026-09-19T23:24:36.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1951
+- author: Lucky
+  changes:
+    - type: Tweak
+      message: Encryption Keys can no longer be removed from headsets.
+    - type: Add
+      message: Added more intercoms for factions (to be mapped).
+  id: 6461
+  time: '2026-09-19T23:26:20.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1917
+- author: Marabout2
+  changes:
+    - type: Tweak
+      message: '[NCR] Tweaked the loadout options to display in the right category'
+    - type: Fix
+      message: '[NCR] The NCR LTCOL finally get his job slot.'
+  id: 6462
+  time: '2026-09-20T12:26:43.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1953
+- author: Bradysgaming
+  changes:
+    - type: Tweak
+      message: Dogs can no longer pick up or be given weapons.
+  id: 6463
+  time: '2026-09-20T12:26:56.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1958
+- author: JohnKieser
+  changes:
+    - type: Fix
+      message: >-
+        Damage to bodyparts now respect armor. Ignored even when 100% of damage
+        was resisted
+  id: 6464
+  time: '2026-09-21T04:34:21.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1965
+- author: enkidienne
+  changes:
+    - type: Add
+      message: 2 armor 2 uniforms to the NCR medic.
+  id: 6465
+  time: '2026-09-21T04:36:58.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1959
+- author: Vixting
+  changes:
+    - type: Add
+      message: Added a suicide vest.
+    - type: Add
+      message: Added suicide vest to legion recipe
+  id: 6466
+  time: '2026-09-21T13:37:54.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1972
+- author: JohnKieser
+  changes:
+    - type: Fix
+      message: >-
+        issues related to delfected projectiles and hitscans. Their visuals
+        should match up now. 
+    - type: Fix
+      message: >-
+        Armor with reflect probability values for lasers should now actually use
+        those probabilities instead of default
+  id: 6467
+  time: '2026-09-21T13:38:33.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1967
