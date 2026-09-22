@@ -62,6 +62,10 @@
     {
       "name": "equipped-HELMET-unshaded",
       "directions": 4
+    },
+    {
+      "name": "equipped-HELMET",
+      "directions": 4
     }
   ]
 }
