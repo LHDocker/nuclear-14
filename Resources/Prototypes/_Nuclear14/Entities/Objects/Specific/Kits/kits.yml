@@ -544,7 +544,7 @@
       - id: N14ClothingOuterNCRVestCoatBlack
       - id: ClothingBeltNCR
       - id: N14ClothingMaskBlackBalaclava
-      - id: N14ClothingEyesNCRNVGs
+      - id: ClothingEyesNightVisionGoggles
       - id: N14WeaponSMG9mminfiltrator
       - id: N14MagazineSMG9mm
         amount: 4
