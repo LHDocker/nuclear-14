@@ -116,7 +116,7 @@
       - EncryptionKeyEngineeringUR
       - EncryptionKeyCommonUR
       - EncryptionKeyWastelandGlobal
-  - type: EncryptionKeyHolder
+  - type: Clothing
     sprite: Clothing/Ears/Headsets/engineering.rsi
   - type: Clothing
     sprite: Clothing/Ears/Headsets/engineering.rsi
