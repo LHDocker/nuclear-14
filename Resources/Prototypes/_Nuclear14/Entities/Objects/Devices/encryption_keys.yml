@@ -115,7 +115,7 @@
     channels:
     - NCR
     - NCRRangers
-    - OSU
+    - OSI
     defaultChannel: NCR
   - type: Sprite
     layers:
