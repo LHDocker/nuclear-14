@@ -119,8 +119,8 @@
 
 - type: entity
   parent: N14BasePipboy
-  id: N14NCRLieutenantColonel
-  suffix: NCR L. Col.
+  id: N14NCRLieutenantColonelPipboy
+  suffix: NCR Lt. Col.
   components:
   - type: Pda
     id: N14IDNCRDogtagltcol
