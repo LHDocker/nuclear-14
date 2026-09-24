@@ -127,6 +127,7 @@
     - Back
     - suitStorage
   - type: Item
+    size: Huge
     sprite: _Misfits/Objects/Weapons/Guns/Rifles/t60heavyrifle.rsi
   - type: Sprite
     sprite: _Misfits/Objects/Weapons/Guns/Rifles/t60heavyrifleicon.rsi
@@ -140,7 +141,7 @@
     minAngle: -23
     maxAngle: -43
   - type: Gun
-    fireRate: 6.5
+    fireRate: 6
     minAngle: 24
     maxAngle: 45
     angleIncrease: 4
@@ -150,8 +151,8 @@
   - type: Wieldable
     wieldedSpeedModifier: 0.8
   - type: ClothingSpeedModifier
-    walkModifier: 0.90
-    sprintModifier: 0.90
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: ItemSlots
     slots:
       gun_magazine:

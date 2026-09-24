@@ -1564,7 +1564,6 @@
     items:
       - id: N14WeaponRifle556HeavyAssault
       - id: N14MagazineHeavy556Rifle
-        amount: 2
       - id: N14WeaponLaserPistol
       - id: N14PowerCellSmall
         amount: 2

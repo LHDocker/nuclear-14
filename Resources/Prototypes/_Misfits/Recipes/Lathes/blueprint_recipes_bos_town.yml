@@ -383,11 +383,13 @@
   materials:
     Steel: 10500
 
-    Glass: 1000
+    Glass: 2500
 
-    Circuitry: 900
+    Circuitry: 1200
 
     ScrapElectronic: 1000
+
+    N14Brass: 500
 
     N14Gold: 500
 
