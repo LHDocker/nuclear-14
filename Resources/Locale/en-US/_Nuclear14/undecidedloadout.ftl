@@ -410,8 +410,8 @@ undecided-loadout-category-mbos-pal-slay-description =
 undecided-loadout-category-mbos-pal-bal-name = Ballistic Kit
 undecided-loadout-category-mbos-pal-bal-description =
     A cache containing belongings of a Brotherhood chapter member.
-    Includes 1 heavy assault rifle, 2 box magazines, 1 AEP-7, 2 energy
-    cells, 1 roll of gauze, 1 stimpak, and 1 K ration MRE.
+    Includes 1 heavy assault rifle, a spare box magazine, 1 AEP-7,
+    2 energy cells, 1 roll of gauze, 1 stimpak, and 1 K ration MRE.
 
 # Misfits Change /Tweak/: Replaced Wattz 2000 sniper with Bozar GRA across all ranks.
 undecided-loadout-category-mbos-pal-sni-name = Advanced Laser Kit
