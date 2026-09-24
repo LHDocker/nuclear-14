@@ -11898,3 +11898,18 @@ Entries:
   id: 6469
   time: '2026-09-22T23:25:52.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1991
+- author: RedBookcase
+  changes:
+    - type: Tweak
+      message: Paladin HAR kit gets 1 spare mag, not 2
+    - type: Tweak
+      message: HAR ROF 6.5 -> 6.0, HAR clothing slowdown increased from 10% -> 15%
+    - type: Fix
+      message: >-
+        HAR size increased from 2x4 to 4x4, HAR magazine size increased from 1x2
+        to 2x2
+    - type: Tweak
+      message: Increase price of the AER-14 BP
+  id: 6470
+  time: '2026-09-24T02:53:30.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1995
