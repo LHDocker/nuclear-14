@@ -11932,3 +11932,18 @@ Entries:
   id: 6473
   time: '2026-09-25T03:12:30.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1912
+- author: Riptidetheshark87
+  changes:
+    - type: Add
+      message: Brass knuckles
+    - type: Add
+      message: Gold knuckles
+    - type: Add
+      message: Love and hate
+    - type: Add
+      message: Love and Hate to Tribal BP
+    - type: Tweak
+      message: brass knuckles attack speed nerfed
+  id: 6474
+  time: '2026-09-25T03:22:14.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1980
