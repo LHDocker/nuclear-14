@@ -18,6 +18,10 @@
     - !type:CharacterSpeciesRequirement
       species:
       - Human
+    - !type:CharacterSexRequirement
+      sex: Male
+    - !type:CharacterGenderRequirement
+      gender: Male
   startingGear: CaesarLegionLegionnaireVeteranGear
   alwaysUseSpawner: true
   icon: "JobIconlegionerVeteran"

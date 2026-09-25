@@ -16,6 +16,10 @@
     - !type:CharacterSpeciesRequirement
       species:
         - Human
+    - !type:CharacterSexRequirement
+      sex: Female
+    - !type:CharacterGenderRequirement
+      gender: Female
   startingGear: CaesarLegionAcolyteOfMarsGear
   alwaysUseSpawner: true
   icon: "JobIconlegionerRecruit"
