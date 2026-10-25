@@ -2185,7 +2185,7 @@
   - type: MeleeWeapon
     wideAnimationRotation: 180
     soundHit:
-      collection: /Audio/Voice/Human/malescream_2.ogg
+      path: /Audio/Voice/Human/femalescream_2.ogg
     damage:
       types:
         Blunt: 1000
