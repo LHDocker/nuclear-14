@@ -98,7 +98,7 @@
   id: BoSHeadKnightGear
   equipment:
     wallet: N14Wallet
-    jumpsuit: N14ClothingUniformJumpskirtBOSBlack
+    jumpsuit: M14ClothingUniformBrotherhoodSeniorKnight
     back: N14ClothingBackpackMilitary
     shoes: N14ClothingBootsLeatherFilled
     head: N14ClothingHeadKnightBeret

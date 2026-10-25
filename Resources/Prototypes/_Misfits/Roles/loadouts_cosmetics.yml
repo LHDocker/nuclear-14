@@ -778,6 +778,30 @@
   items:
     - N14ClothingHeadHatBrotherhoodFieldCap
 
+- type: loadout
+  id: MisfitsLoadoutHeadBrotherhoodHeadCover
+  category: Accessories
+  cost: 0
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - BoSInitiate
+    - BoSMidSquire
+    - BoSKnight
+    - BoSScribe
+    - BoSPaladin
+    - BoSMidKnight
+    - BoSLancerKnight
+    # #Cythisiax Removed - Lancer rank folded into Lancer-Knight
+    - BoSMidPaladin
+    - BoSWestScribe
+    - BoSMidScribe
+    - BoSHeadKnight
+    - BoSMidPaladinCommander
+    - BoSWestElderCommander
+  items:
+  - N14ClothingHeadHatBrotherhoodHeadCover
+
 # #Misfits Add - Belt: Brotherhood of Steel Squire webbing.
 
 - type: loadout

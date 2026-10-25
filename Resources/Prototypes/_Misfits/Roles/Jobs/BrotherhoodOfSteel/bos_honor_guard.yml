@@ -49,7 +49,7 @@
   id: BoSHonorGuardGear
   equipment:
     wallet: N14Wallet
-    jumpsuit: N14ClothingUniformBosRecon
+    jumpsuit: M14ClothingUniformBrotherhoodPaladin
     back: N14ClothingBackpackMilitary
     shoes: N14ClothingBootsLeatherFilled
     head: N14ClothingPaladinBeret

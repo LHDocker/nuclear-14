@@ -42,7 +42,7 @@
   id: BoSMidPaladinGear
   equipment:
     wallet: N14Wallet
-    jumpsuit: N14ClothingUniformBosRecon  #Misfits Change /Tweak/: New consolidated BoS gear
+    jumpsuit: M14ClothingUniformBrotherhoodPaladin  #Misfits Change /Tweak/: New consolidated BoS gear
     back: N14ClothingBackpackMilitary
     shoes: N14ClothingBootsLeatherFilled
     head: N14ClothingHeadHatCapkhighBoS
