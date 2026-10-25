@@ -552,7 +552,7 @@
   - type: WastelandMap
     mapTexturePath: _Misfits/Maps/wendover_map.png
     mapTitle: Recon Tactical Map
-    tacticalFeed: C27 # #Misfits Add - tracks NCR and BoS holotags so allies show up
+    tacticalFeed: C27 # #Misfits Add - resolved per viewer from the chassis's own ID card (NCR or BoS only)
     worldBounds: "-517,-308,484,311"
   # #Misfits Add - grant the map action the way N14MobC27ZAX grants its repair action, since WastelandMapAction only auto-grants for worn items.
   - type: ActionGrant
