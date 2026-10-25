@@ -96,7 +96,7 @@
     wallet: N14Wallet
     jumpsuit: M14ClothingUniformBrotherhoodScribe
     back: N14ClothingBackpackSatchelMilitary
-    shoes: N14ClothingBootsLeatherFilled
+    shoes: N14ClothingBootsCombatFilled
     # outerClothing: N14ClothingOuterBrotherhoodMidwestFieldScribeCoat # #Misfits Removed - Coat now comes from loadout kit selection
     pocket1: BoSBrotherhoodScribeKits
     id: N14IDBrotherhoodOfSteelHolotagScribe

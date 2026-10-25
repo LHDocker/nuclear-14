@@ -69,9 +69,9 @@
   id: BoSWestElderCommanderGear
   equipment:
     wallet: N14Wallet
-    jumpsuit: N14ClothingUniformJumpskirtBOSBlack  #Misfits Change /Tweak/: New consolidated BoS gear
+    jumpsuit: M14ClothingUniformBrotherhoodParade  #Misfits Change /Tweak/: New consolidated BoS gear
     back: N14ClothingBackpackMilitary
-    shoes: N14ClothingBootsLeatherFilled
+    shoes: N14ClothingBootsCombatMK2Filled
     outerClothing: MisfitsClothingOuterBrotherhoodElderBomber
     hands: N14ClothingHandsGlovesCombat
     pocket1: BoSBrotherhoodElderKits

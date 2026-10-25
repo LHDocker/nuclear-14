@@ -270,20 +270,6 @@
   # - type: ClothingSpecialModifier
     # perceptionModifier: 1
 
-- type: entity
-  parent: ClothingHeadBase
-  id: N14ClothingHeadHatBrotherhoodHeadCover
-  name: Brotherhood head cover
-  description: An insulating head cover intended to be worn underneath power armor.
-  components:
-  - type: Sprite
-    sprite: _Misfits/Clothing/Head/bos_head_cover.rsi
-  - type: Clothing
-    sprite: _Misfits/Clothing/Head/bos_head_cover.rsi
-  - type: Tag
-    tags:
-    - HidesHair
-
 # Enclave
 - type: entity
   parent: ClothingHeadBase

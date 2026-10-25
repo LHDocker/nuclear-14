@@ -181,3 +181,17 @@
         Slash: 0.95
         Piercing: 0.95
     priceMultiplier: 0.5
+
+- type: entity
+  parent: ClothingMaskBase
+  id: N14ClothingMaskBrotherhoodHeadCover
+  name: Brotherhood head cover
+  description: An insulating head cover intended to be worn underneath power armor.
+  components:
+  - type: Sprite
+    sprite: _Misfits/Clothing/Mask/bos_head_cover.rsi
+  - type: Clothing
+    sprite: _Misfits/Clothing/Mask/bos_head_cover.rsi
+  - type: Tag
+    tags:
+    - HidesHair

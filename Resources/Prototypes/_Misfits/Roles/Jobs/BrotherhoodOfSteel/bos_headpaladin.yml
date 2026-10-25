@@ -51,8 +51,9 @@
     wallet: N14Wallet
     jumpsuit: M14ClothingUniformBrotherhoodPaladin  #Misfits Change /Tweak/: New consolidated BoS gear
     back: N14ClothingBackpackMilitary
-    shoes: N14ClothingBootsLeatherFilled
+    shoes: N14ClothingBootsCombatFilled
     head: N14ClothingPaladinBeret
+    mask: N14ClothingMaskBrotherhoodHeadCover
     outerClothing: N14ClothingOuterPowerArmorWashT51Elite #Misfits Tweak: Head Paladin wears T-51b (was T-51BC commander)
     hands: N14ClothingHandsGlovesCombat
     pocket1: BoSBrotherhoodHeadPaladinKits

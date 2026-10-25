@@ -779,8 +779,8 @@
     - N14ClothingHeadHatBrotherhoodFieldCap
 
 - type: loadout
-  id: MisfitsLoadoutHeadBrotherhoodHeadCover
-  category: Accessories
+  id: MisfitsLoadoutMaskBrotherhoodHeadCover
+  category: Mask
   cost: 0
   requirements:
   - !type:CharacterJobRequirement
@@ -800,7 +800,7 @@
     - BoSMidPaladinCommander
     - BoSWestElderCommander
   items:
-  - N14ClothingHeadHatBrotherhoodHeadCover
+  - N14ClothingMaskBrotherhoodHeadCover
 
 # #Misfits Add - Belt: Brotherhood of Steel Squire webbing.
 

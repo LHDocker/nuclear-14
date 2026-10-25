@@ -40,7 +40,7 @@
     wallet: N14Wallet
     jumpsuit: M14ClothingUniformBrotherhoodSquire  #Misfits Change /Tweak/: New consolidated BoS gear
     back: MisfitsClothingBackpackSquire # #Misfits Add - Squire Bag starting back item
-    shoes: N14ClothingBootsLeatherFilled
+    shoes: N14ClothingBootsCombatFilled
     head: N14ClothingBrotherhoodSidecap
     outerClothing: MisfitsBoSSquireArmor # #Misfits Tweak: T3 armor (0.80/0.75) — Squires sit between Initiate (T2) and Knight (T4)
     pocket1: BoSBrotherhoodSquireKits

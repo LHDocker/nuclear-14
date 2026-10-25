@@ -44,8 +44,8 @@
     wallet: N14Wallet
     jumpsuit: M14ClothingUniformBrotherhoodPaladin  #Misfits Change /Tweak/: New consolidated BoS gear
     back: N14ClothingBackpackMilitary
-    shoes: N14ClothingBootsLeatherFilled
-    head: N14ClothingHeadHatCapkhighBoS
+    shoes: N14ClothingBootsCombatFilled
+    mask: N14ClothingMaskBrotherhoodHeadCover
     outerClothing: N14ClothingOuterPowerArmorT60BOS # #Misfits Change - Senior Paladin now wears BOS T60 with Brotherhood tactical HUD helmet
     pocket1: BoSBrotherhoodSeniorPaladinKits
     hands: N14ClothingHandsGlovesCombat

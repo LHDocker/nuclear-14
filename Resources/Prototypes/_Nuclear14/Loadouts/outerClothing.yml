@@ -969,7 +969,7 @@
   - !type:CharacterItemGroupRequirement
     group: N14LoadoutOuter
   - !type:CharacterDepartmentRequirement
-    inverted: true
+    inverted: false
     departments:
     - BrotherhoodOfSteel
     - BrotherhoodOfSteelLancers
