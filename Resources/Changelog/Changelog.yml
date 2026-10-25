@@ -12537,3 +12537,74 @@ Entries:
   id: 6529
   time: '2026-10-19T05:55:47.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2098
+- author: Davisrocket
+  changes:
+    - type: Add
+      message: >-
+        Ammo Crates, Detonable Crates, Recreation Crates, Provision Crates,
+        Equipment Crates, Medical Crates
+    - type: Add
+      message: >-
+        Armor Crates balance, and armor balance for Enclave (no longer all the
+        same)
+    - type: Tweak
+      message: Massive Price Overhaul to Enclave gear, stocks, and cost adjustments
+    - type: Tweak
+      message: >-
+        Yaml locations, marks for Enclave clothing and naming to be more
+        standardized
+    - type: Tweak
+      message: ASRS Gold, Silver, Plant Sell Amount
+    - type: Tweak
+      message: Enclave BPs no longer necessary
+    - type: Tweak
+      message: >-
+        Planned future armors coded in but inactive, needing sprites (scout,
+        pilot, marine)
+    - type: Fix
+      message: small microfusion cell red to microfusion cell adjustments
+    - type: Fix
+      message: >-
+        remove Enclave name from appearing in some locations, changed to U.S.
+        Army
+  id: 6530
+  time: '2026-10-21T03:41:04.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2099
+- author: Tytos
+  changes:
+    - type: Fix
+      message: Fixed infinite money with high charisma cash trading
+  id: 6531
+  time: '2026-10-24T18:12:18.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2105
+- author: hobolyra
+  changes:
+    - type: Remove
+      message: Feline genes no longer spawn
+  id: 6532
+  time: '2026-10-24T18:21:59.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2111
+- author: Billclinton
+  changes:
+    - type: Tweak
+      message: Death to the ROFs, ballistic rifles have lost their low TTK
+    - type: Tweak
+      message: Death to the reflect, 5.56, 5.45, and 7.62 no longer bounce on PA.
+    - type: Tweak
+      message: autoplas lost 0.5 ROF and went to the same accuracy as the other plasma
+    - type: Tweak
+      message: buffed 5.56, 5.45, 7.62, 12.7, and .308 damages by a minor amount.
+    - type: Tweak
+      message: added additional slowdown to machineguns. Most of them sit at 25% now.
+  id: 6533
+  time: '2026-10-24T18:37:56.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2102
+- author: JohnKieser
+  changes:
+    - type: Fix
+      message: >-
+        Description for buffed perks updated to be correct. In case you didnt
+        realize life giver, iron fist, and rad claw were buffed
+  id: 6534
+  time: '2026-10-25T21:30:30.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2117
