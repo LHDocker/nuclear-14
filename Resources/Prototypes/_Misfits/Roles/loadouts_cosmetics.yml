@@ -713,6 +713,7 @@
   requirements:
     - !type:CharacterJobRequirement
       jobs:
+        - BoSOffDuty
         - BoSInitiate
         - BoSMidSquire
         - BoSKnight
@@ -738,6 +739,7 @@
   requirements:
     - !type:CharacterJobRequirement
       jobs:
+        - BoSOffDuty
         - BoSInitiate
         - BoSMidSquire
         - BoSKnight
@@ -761,6 +763,7 @@
   requirements:
     - !type:CharacterJobRequirement
       jobs:
+        - BoSOffDuty
         - BoSInitiate
         - BoSMidSquire
         - BoSKnight
@@ -785,6 +788,7 @@
   requirements:
   - !type:CharacterJobRequirement
     jobs:
+    - BoSOffDuty
     - BoSInitiate
     - BoSMidSquire
     - BoSKnight
