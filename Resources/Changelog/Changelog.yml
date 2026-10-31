@@ -12694,3 +12694,10 @@ Entries:
   id: 6542
   time: '2026-10-31T01:11:09.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2125
+- author: hobolyra
+  changes:
+    - type: Fix
+      message: Town and Vault warp
+  id: 6543
+  time: '2026-10-31T13:24:58.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2134
