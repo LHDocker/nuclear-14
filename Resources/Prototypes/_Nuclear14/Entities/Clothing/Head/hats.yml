@@ -448,8 +448,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: N14ClothingDrylanderGoggles
-  name: tribal goggled wraps
-  description: Headgear fashioned of rags with a pair of goggles.
+  name: Tribal Fire Hand Headwrap
+  description: Made to maintain clear sight in even the worst of duststorms, these goggles and rags have become a traditional garb of Fire Hand skirmishers in the local tribe. They help keep sand out of the eyes, along with the acrid sting of the thundering guns.
   components:
   - type: Sprite
     sprite: _Nuclear14/Clothing/Head/FalloutHats/drylander-goggles.rsi
