@@ -12669,3 +12669,12 @@ Entries:
   id: 6539
   time: '2026-10-30T23:51:20.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2123
+- author: hobolyra
+  changes:
+    - type: Remove
+      message: Deletes exploitable items from outside vault map
+    - type: Tweak
+      message: Multiple QoL changes to vault map
+  id: 6540
+  time: '2026-10-31T01:03:52.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2131
