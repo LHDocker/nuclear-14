@@ -241295,9 +241295,8 @@ entities:
       canTeleportToOtherMaps: True
       arrivalSound: !type:SoundPathSpecifier
         path: /Audio/Effects/teleport_arrival.ogg
-    - type: LinkedEntity
-      linkedEntities:
-      - invalid
+    - type: PortalAutoLink
+      linkKey: kerta_Vault_ToVault
     missingComponents:
     - Damageable
     - Destructible
@@ -241363,9 +241362,8 @@ entities:
       canTeleportToOtherMaps: True
       arrivalSound: !type:SoundPathSpecifier
         path: /Audio/Effects/teleport_arrival.ogg
-    - type: LinkedEntity
-      linkedEntities:
-      - invalid
+    - type: PortalAutoLink
+      linkKey: TownCave
     missingComponents:
     - Destructible
 - proto: SteelBench
