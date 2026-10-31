@@ -12687,3 +12687,10 @@ Entries:
   id: 6541
   time: '2026-10-31T01:10:47.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2120
+- author: TytosB
+  changes:
+    - type: Tweak
+      message: slightly reduced time reqs for a few legion jobs
+  id: 6542
+  time: '2026-10-31T01:11:09.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/2125
