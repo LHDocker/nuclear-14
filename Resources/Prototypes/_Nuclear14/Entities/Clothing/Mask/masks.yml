@@ -208,3 +208,15 @@
   - type: Tag
     tags:
     - HidesHair
+
+  parent: ClothingMaskMuzzle
+  id: ClothingMaskMuzzleWim
+  name: wim's muzzle
+  description: A specially-fitted muzzle for a husky.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Misfits/Clothing/Mask/wim_muzzle.rsi
+  - type: Clothing
+    sprite: _Misfits/Clothing/Mask/wim_muzzle.rsi
